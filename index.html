@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Sleeper is a JAVASCRIPT calculator that helps you wake up refreshed by finding the best time to go to sleep.">
+    <!-- ORIGINAL CODER -->
+    <meta name="author" content="David Shaw">
+    <title>Sleeper by @danerscode</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/96x96.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+        <div id="headband">
+            <h2><a href="./">Sleeper App</a></h2>
+        </div>
+        <div class="container" id="content">
+                <div>
+                    <div>
+                        <div id="start">
+                        <p class="p_format">Eu quero acordar...<br/>
+                        <div style="text-align: center;">
+                        <select id="hour">
+                            <option>(Hora)</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                        <select id="minute">
+                            <option>(Minutos)</option>
+                            <option>00</option>
+                            <option>05</option>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                            <option>25</option>
+                            <option>30</option>
+                            <option>35</option>
+                            <option>40</option>
+                            <option>45</option>
+                            <option>50</option>
+                            <option>55</option>
+                        </select>
+                        <select id="ampm">
+                            <option>Manhã</option>
+                            <option>Noite</option>
+                        </select>
+                        <br/>
+                        <button id="calculate">Calcular</button>
+                        </div>
+                        <p class="p_format"><i>Ou</i></p>
+                        <p class="p_format">Calcule a hora de acordar se for...</p>
+                        <center>
+                            <button id="zzz">Dormir agora</button>
+                            <br/><br/><br/><br/><br/>
+                        </center>
+                        </div> <!-- end #start -->
+                        <div id="results" style="display:none;">
+                            <div>
+                                <span>Você deve tentar <b>adormecer</b> em um dos seguintes horários:</span>
+                            </div>
+                            <span id="result1" class="results" title="Seis clicos = Nove horas de sono"></span> <i>ou </i>
+                            <span id="result2" class="results" title="Cinco ciclos = Sete horas e meia de sono"></span> <i>ou </i>
+                            <span id="result3" class="results" title="Quatro ciclos = Seis horas de sono"></span> <i>ou </i>
+                            <span id="result4" class="results" title="Três ciclos = Quatro horas e meia de sono"></span>
+                            <p>Levamos em torno de 15 minutos para adormecer então organize seu horário para deitar antes dos horários acima!</p>
+                            <p>Sleeper App apenas calcula os ciclos de sono baseado no horário que você determinou. Acordar ao fim de um ciclo completo vai lhe dar a sensação de descanso e vigor que você precisa!</p>
+                            <center><a class="back" href="#">Voltar</a><br/>
+                            </center>
+                        </div><!-- end results -->
+                        <div id="resultsNow" style="display:none;">
+                            <p>Levamos em torno de 15 minutos para adormecer!</p>
+                            <p>Indo para cama agora se organize para acordar em um dos seguintes horários:</p>
+                            <span id="resultNow1" style="font-size: 300%; color: rgb(168, 39, 254);" title="Um ciclo = Uma hora e meia de sono"></span> <i style="font-size: 150%;">&nbsp;ou </i>
+                            <span id="resultNow2" style="font-size: 300%; color: rgb(154, 3, 254);" title="Dois ciclos = três horas de sono"></span> <i style="font-size: 150%;">&nbsp;ou </i>
+                            <span id="resultNow3" style="font-size: 300%; color: rgb(150, 105, 254);" title="Três ciclos = quatro horas e meia de sono"></span> <i style="font-size: 150%;">&nbsp;ou </i>
+                            <span id="resultNow4" style="font-size: 300%; color: rgb(140, 140, 255);" title="Quatro ciclos = seis horas de sono"></span> <i style="font-size: 150%;">&nbsp;ou </i>
+                            <span id="resultNow5" style="font-size: 300%; color: rgb(187, 187, 255);" title="Cinco ciclos = sete horas e meia de sono"></span> <i style="font-size: 150%;">&nbsp;ou </i>
+                            <span id="resultNow6" style="font-size: 300%; color: rgb(143, 254, 221);" title="Seis ciclos = nove horas de sono"></span>
+                            <center><a class="back" href="#">Voltar</a><br/>
+                            </center>
+                        </div> <!-- end resultsNow -->
+                    </div> 
+                </div> <!-- end row -->
+                <hr />
+                <footer>
+                    <span>PWA recriado por <a href="https://danerscode.com">@danerscode</a>. Projeto original: <a href="http://sleepyti.me" target="_blank">Sleepyti.me</a></span>
+                </footer>
+                <hr />
+                </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>    
+</body>
+</html>

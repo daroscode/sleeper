@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  background: #EEE;
+  height: auto;
+}
+#headband{
+    background-color: #001F3F;
+    height: 15vh;
+}
+h2{
+    display: flex;
+    flex: 0 1 40vw;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-weight: 800;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+p{
+    display: flex;
+    flex: 0 1 40vw;
+    height: 45vh;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+button{
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+}
+button:hover{
+    background: #F4F4F4;
+}
+select{
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+}
+i{
+    font-size: 2rem;
+}
+hr{
+    height: 15vh;
+}
+.results{
+    font-size: 300%;
+    color: rgb(1, 223, 116);
+}
+/* Para telas maiores que 320px */
+@media(min-width: 320px){
+    h2{
+        display: flex;
+        flex: 0 1 40vw;
+        height: 15vh;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        text-align: center;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-weight: 800;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+      }
+    p{
+        display: flex;
+        flex: 0 1 40vw;
+        height: 25vh;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+    .p_format{
+        display: flex;
+        flex: 0 1 40vw;
+        height: 10vh;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 1.5rem; 
+    }
+    button{
+        padding: 1rem 3rem;
+        border: 1px #ccc solid;
+        display: inline-block;
+        margin: 2rem 0 0;
+        border-radius: 50px;
+        text-decoration: none;
+        color: #333;
+        transition: background 500ms ease;
+    }
+    button:hover{
+        background: #F4F4F4;
+    }
+    i{
+        font-size: 2rem;
+    }
+}
+
+/* Para telas maiores que 480px */
+@media(min-width: 480px){
+    h2{
+        display: flex;
+        flex: 0 1 40vw;
+        height: 15vh;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        text-align: center;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-weight: 800;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+      }
+    p{
+        display: flex;
+        flex: 0 1 40vw;
+        height: 35vh;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 2.5rem;
+      }
+    .p_format{
+        display: flex;
+        flex: 0 1 40vw;
+        height: 10vh;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 2.5rem; 
+    }
+    button{
+        padding: 1rem 3rem;
+        border: 1px #ccc solid;
+        display: inline-block;
+        margin: 2rem 0 0;
+        border-radius: 50px;
+        text-decoration: none;
+        color: #333;
+        transition: background 500ms ease;
+    }
+    button:hover{
+        background: #F4F4F4;
+    }
+    i{
+        font-size: 3rem;
+    }
+}
