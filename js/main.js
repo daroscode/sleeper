@@ -8,8 +8,10 @@ if ('serviceWorker' in navigator) {
 //App logic
 $(document).ready(function() {
     $('.back').click(function() {
-        window.location = "https://danerscode.com/sleeper/";
+        window.location = "https://daroscode.github.io/sleeper/";
     });
+
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
 
     $('#calculate').click(function() {
         if($('#hour').val() != '(Hora)' && $('#minute').val() != '(Minutos)') {
