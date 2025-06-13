@@ -5,10 +5,80 @@ body{
   background: #EEE;
   height: auto;
 }
-#headband{
-    background-color: #001F3F;
-    height: 15vh;
+
+#content {
+    background-color: #AEC8A4;
+    color: #3B3B1A;
+    padding: 0;
+
+    #headband {
+        background-color: #E7EFC7;
+        height: 15vh;
+    }
+    #headband h2 a {
+        color: #8A784E;
+    }
+
+    #start p {
+        padding-top: 5vh;
+    }
+
+    #calculate {
+        /* background-color: #8A784E; */
+        color: #FFF;
+    }
+
+    #zzz {
+        /* background-color: #E7EFC7; */
+        color: #FFF;  
+    }
+
+    .resultsBG {
+        background-color: #000;
+        padding: 5vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .resultsBG span {
+        font-size: 2rem;
+    }
+
+    #results,
+    #resultsNow {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5vh;
+        text-align: center;
+    }
+
+    #calculate,
+    #zzz,
+    #resultsBtn, 
+    #resultsNowBtn {
+        padding: 0.5rem 2rem;
+        border: 1px #ccc solid;
+        display: inline-block;
+        margin: 2rem 0 0;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: background 500ms ease; 
+    }
+
+    #calculate,
+    #zzz,
+    #resultsBtn, 
+    #resultsNowBtn:hover {
+    /* background: #E7EFC7; */
+    } 
+    
+    footer {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
+
 h2{
     display: flex;
     flex: 0 1 40vw;
@@ -26,14 +96,13 @@ h2{
 p{
     display: flex;
     flex: 0 1 40vw;
-    height: 45vh;
     justify-content: center;
     align-items: center;
     font-weight: 400;
     font-size: 1.8rem;
 }
 
-button{
+/* button{
     padding: 0.5rem 2rem;
     border: 1px #ccc solid;
     display: inline-block;
@@ -45,7 +114,7 @@ button{
 }
 button:hover{
     background: #F4F4F4;
-}
+} */
 select{
     padding: 0.5rem 2rem;
     border: 1px #ccc solid;
@@ -63,7 +132,7 @@ hr{
 }
 .results{
     font-size: 300%;
-    color: rgb(1, 223, 116);
+    color: #E7EFC7;
 }
 /* Para telas maiores que 320px */
 @media(min-width: 320px){
@@ -84,7 +153,6 @@ hr{
     p{
         display: flex;
         flex: 0 1 40vw;
-        height: 25vh;
         justify-content: center;
         align-items: center;
         font-weight: 400;
@@ -93,13 +161,12 @@ hr{
     .p_format{
         display: flex;
         flex: 0 1 40vw;
-        height: 10vh;
         justify-content: center;
         align-items: center;
         font-weight: 400;
         font-size: 1.5rem; 
     }
-    button{
+    /* button{
         padding: 1rem 3rem;
         border: 1px #ccc solid;
         display: inline-block;
@@ -111,7 +178,7 @@ hr{
     }
     button:hover{
         background: #F4F4F4;
-    }
+    } */
     i{
         font-size: 2rem;
     }
@@ -136,7 +203,6 @@ hr{
     p{
         display: flex;
         flex: 0 1 40vw;
-        height: 35vh;
         justify-content: center;
         align-items: center;
         font-weight: 400;
@@ -151,7 +217,7 @@ hr{
         font-weight: 400;
         font-size: 2.5rem; 
     }
-    button{
+    /* button{
         padding: 1rem 3rem;
         border: 1px #ccc solid;
         display: inline-block;
@@ -163,7 +229,7 @@ hr{
     }
     button:hover{
         background: #F4F4F4;
-    }
+    } */
     i{
         font-size: 3rem;
     }
